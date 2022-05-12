@@ -29,13 +29,18 @@ function displayCost() {
   let snkPrice = 0
   let drkPrice = 0
 	// get age and day of the week
-	let size = parseInt(document.getElementById('size').value)	
-  let mixins = document.querySelector('input[name="mixins"]:checked').value;
-  let mixins2 = document.querySelector('input[name="mixins2"]:checked').value;
-  let mixins3 = document.querySelector('input[name="mixins3"]:checked').value;
-  let syrup = document.querySelector('input[name="syrup"]:checked').value;
-    let snacks = document.querySelector('input[name="snacks"]:checked').value;
-    let drinks = document.querySelector('input[name="drinks"]:checked').value;
+	let size = select1.options[select1.selectedIndex].value;
+  	let select1 = document.getElementById('size');
+  let mixins = select2.options[select2.selectedIndex].value;
+  	let select2 = document.getElementById('mixins');
+  let mixins2 = select3.options[select3.selectedIndex].value;
+  	let select3 = document.getElementById('mixins2');
+  let mixins3 = select4.options[select4.selectedIndex].value;
+  	let select4 = document.getElementById('mixins3');
+  let syrup = select5.options[select5.selectedIndex].value;
+  	let select5 = document.getElementById('syrup');
+    let snacks = parseInt(document.getElementById('snacks').value)
+    let drinks = parseInt(document.getElementById('drinks').value)
 
       	//  Milkshake size price
   if (size == "Mini")  {
@@ -47,10 +52,10 @@ function displayCost() {
 	else if (size == "Medium") {
 		sizePrice = MED_PRICE
 	}
-    if (size == "Large")  {
+  else  if (size == "Large")  {
 		sizePrice = LRG_PRICE 
 	}
-	else if (size == "Extra Large") {
+	else (size == "Extra Large") {
 		sizePrice = EXT_LRG_PRICE
 	}
 
@@ -84,7 +89,7 @@ function displayCost() {
 	}
 	else if (mixins == "Cookie dough") {
 		mixPrice = MIX_PRICE
-	else  {
+	else {
 		mixPrice = 0
 	}
 
