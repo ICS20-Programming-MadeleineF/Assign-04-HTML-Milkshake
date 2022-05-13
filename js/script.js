@@ -32,7 +32,7 @@ function displayCost() {
   	let select3 = document.getElementById('mixins2');
   let mixins3 = select4.options[select4.selectedIndex].value;
   	let select4 = document.getElementById('mixins3');
-    let snacks = parseInt(document.getElementById('snacks').value)
+    let snacks = parseInt(document.getElementById('snacks').value);
       	//  Milkshake size price
   if (size == "Mini")  {
 		sizePrice = MINI_PRICE 
@@ -46,7 +46,7 @@ function displayCost() {
   else  if (size == "Large")  {
 		sizePrice = LRG_PRICE 
 	}
-	else (size == "Extra Large") {
+	else {
 		sizePrice = EXT_LRG_PRICE
 	}
 
@@ -118,7 +118,7 @@ function displayCost() {
   }
 	else  {
 		mixPrice = 0
-	}
+  }
 
   // mixin 3 price 
    if (mixins3 == "Strawberries") {
@@ -155,7 +155,6 @@ function displayCost() {
 		mixPrice = 0
 	}
   
-
   // snack price 
    if (snacks == "Fries") {
 		snkPrice = SNK_PRICE
@@ -169,15 +168,12 @@ function displayCost() {
 	else  {
 		snkPrice = 0
 	}
-
-
   
   // Totals
-	let subtotal = sizePrice + mixPrice +  snkPrice 
-  let tax = subtotal * HST
-  let total = subtotal + tax
+	let subtotal = sizePrice + mixPrice +  snkPrice; 
+  let tax = subtotal * HST;
+  let total = subtotal + tax;
 	
   	// display the results
   	document.getElementById('display-results').innerHTML  = "Your subtotal is $" + subtotal.toFixed(2) + ".<br>The amount of HST added is $" + tax.toFixed(2) + ".<br>Your total is $" + total.toFixed(2) + ".";
 }
-

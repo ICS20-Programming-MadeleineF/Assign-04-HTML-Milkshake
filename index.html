@@ -134,7 +134,7 @@
           <br><br>
         
           <!-- Table for Snacks -->
-        <form>
+        <form action="javascript:displayCost()">
           <label for="snacks">Choose a snack:</label>
             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="none">
             <input type="radio" id="none" class="mdl-radio__button" name="options" value="1" checked>
@@ -155,7 +155,7 @@
         </form>
         <br><br> 
         <form>
-				  <input type="submit" value="Display Cost">
+				  <input onclick="displayCost()" type="submit" value="Display Cost">
 				</form>
 				</td>
 			</tr>
