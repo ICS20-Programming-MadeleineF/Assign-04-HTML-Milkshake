@@ -82,81 +82,93 @@
       </label>
         <br><br>
         <!-- Table 1 for mixins -->
-        <label for="mixins">Choose up to 3 mixins:</label>
-        <select name="mixins" id="mixins">
-            <option value="">--Mixins for Milkshakes--</option>
-            <option value="None">None $(0.00)</option>
-            <option value="Strawberries">Strawberries $(1.50)</option>
-            <option value="Bananas">Bananas $(1.50)</option>
-            <option value="Blueberries">Blueberries $(1.50)</option>
-            <option value="Cherries">Cherries $(1.50)</option>
-            <option value="Crushed smarties">Crushed smarties $(1.50)</option>
-            <option value="Cake chunks">Cake chunks $(1.50)</option>
-            <option value="Whipped cream">Whipped cream $(1.50)</option>
-            <option value="Sprinkles">Sprinkles $(1.50)</option>
-            <option value="Oreo crumble">Oreo crumble $(1.50)</option>
-            <option value="Cookie dough">Cookie dough $(1.50)</option>
-        </select>
+        <form action="javascript:displayCost()">
+          <label for="mixins">Choose up to 3 mixins:</label>
+          <select name="mixins" id="mixins1">
+              <option value="">--Mixins for Milkshakes--</option>
+              <option value="None">None $(0.00)</option>
+              <option value="Strawberries">Strawberries $(1.50)</option>
+              <option value="Bananas">Bananas $(1.50)</option>
+              <option value="Blueberries">Blueberries $(1.50)</option>
+              <option value="Cherries">Cherries $(1.50)</option>
+              <option value="Crushed smarties">Crushed smarties $(1.50)</option>
+              <option value="Cake chunks">Cake chunks $(1.50)</option>
+              <option value="Whipped cream">Whipped cream $(1.50)</option>
+              <option value="Sprinkles">Sprinkles $(1.50)</option>
+              <option value="Oreo crumble">Oreo crumble $(1.50)</option>
+              <option value="Cookie dough">Cookie dough $(1.50)</option>
+          </select>
+        </form>
         <br><br>
           <!-- Table 2 for mixins -->
-          <label for="mixins2">-------------------------------</label>
-          <select name="mixins2" id="mixins2">
-              <option value="">--Mixins for Milkshakes--</option>
-              <option value="None">None $(0.00)</option>
-              <option value="Strawberries">Strawberries $(1.50)</option>
-              <option value="Bananas">Bananas $(1.50)</option>
-              <option value="Blueberries">Blueberries $(1.50)</option>
-              <option value="Cherries">Cherries $(1.50)</option>
-              <option value="Crushed smarties">Crushed smarties $(1.50)</option>
-              <option value="Cake chunks">Cake chunks $(1.50)</option>
-              <option value="Whipped cream">Whipped cream $(1.50)</option>
-              <option value="Sprinkles">Sprinkles $(1.50)</option>
-              <option value="Oreo crumble">Oreo crumble $(1.50)</option>
-              <option value="Cookie dough">Cookie dough $(1.50)</option>
-          </select>
+          <form action="javascript:displayCost()">
+            <label for="mixins2">-------------------------------</label>
+            <select name="mixins2" id="mixins2">
+                <option value="">--Mixins for Milkshakes--</option>
+                <option value="None">None $(0.00)</option>
+                <option value="Strawberries">Strawberries $(1.50)</option>
+                <option value="Bananas">Bananas $(1.50)</option>
+                <option value="Blueberries">Blueberries $(1.50)</option>
+                <option value="Cherries">Cherries $(1.50)</option>
+                <option value="Crushed smarties">Crushed smarties $(1.50)</option>
+                <option value="Cake chunks">Cake chunks $(1.50)</option>
+                <option value="Whipped cream">Whipped cream $(1.50)</option>
+                <option value="Sprinkles">Sprinkles $(1.50)</option>
+                <option value="Oreo crumble">Oreo crumble $(1.50)</option>
+                <option value="Cookie dough">Cookie dough $(1.50)</option>
+            </select>
+          </form>
           <br><br>
           <!-- Table 3 for mixins -->
-          <label for="mixins3">-------------------------------</label>
-          <select name="mixins3" id="mixins3">
-              <option value="">--Mixins for Milkshakes--</option>
-              <option value="None">None $(0.00)</option>
-              <option value="Strawberries">Strawberries $(1.50)</option>
-              <option value="Bananas">Bananas $(1.50)</option>
-              <option value="Blueberries">Blueberries $(1.50)</option>
-              <option value="Cherries">Cherries $(1.50)</option>
-              <option value="Crushed smarties">Crushed smarties $(1.50)</option>
-              <option value="Cake chunks">Cake chunks $(1.50)</option>
-              <option value="Whipped cream">Whipped cream $(1.50)</option>
-              <option value="Sprinkles">Sprinkles $(1.50)</option>
-              <option value="Oreo crumble">Oreo crumble $(1.50)</option>
-              <option value="Cookie dough">Cookie dough $(1.50)</option>
-          </select>
+          <form action="javascript:displayCost()">
+            <label for="mixins3">-------------------------------</label>
+            <select name="mixins3" id="mixins3">
+                <option value="">--Mixins for Milkshakes--</option>
+                <option value="None">None $(0.00)</option>
+                <option value="Strawberries">Strawberries $(1.50)</option>
+                <option value="Bananas">Bananas $(1.50)</option>
+                <option value="Blueberries">Blueberries $(1.50)</option>
+                <option value="Cherries">Cherries $(1.50)</option>
+                <option value="Crushed smarties">Crushed smarties $(1.50)</option>
+                <option value="Cake chunks">Cake chunks $(1.50)</option>
+                <option value="Whipped cream">Whipped cream $(1.50)</option>
+                <option value="Sprinkles">Sprinkles $(1.50)</option>
+                <option value="Oreo crumble">Oreo crumble $(1.50)</option>
+                <option value="Cookie dough">Cookie dough $(1.50)</option>
+            </select>
+          </form>
           <br><br>
         
           <!-- Table for Snacks -->
-        <form action="javascript:displayCost()">
+        <form id="snacks">
           <label for="snacks">Choose a snack:</label>
+           <br><br>
             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="none">
             <input type="radio" id="none" class="mdl-radio__button" name="options" value="1" checked>
             <span class="mdl-radio__label">None $(0.00)</span>
           </label>
+           <br><br>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Fries">
             <input type="radio" id="Fries" class="mdl-radio__button" name="options" value="2">
             <span class="mdl-radio__label">Fries $(5.00)</span>
           </label>
+           <br><br>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Chips">
             <input type="radio" id="Chips" class="mdl-radio__button" name="options" value="2">
             <span class="mdl-radio__label">Chips $(5.00)</span>
           </label>
+           <br><br>
           <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Popcorn">
             <input type="radio" id="Popcorn" class="mdl-radio__button" name="options" value="2">
             <span class="mdl-radio__label">Popcorn $(5.00)</span>
+            <br><br>
           </label>
+          <br><br>
+          <input onclick="displayCost()" type="button" value="Display Cost">
         </form>
+        
         <br><br> 
-        <form>
-				  <input onclick="displayCost()" type="submit" value="Display Cost">
-				</form>
+				  
 				</td>
 			</tr>
 		</table>
