@@ -6,7 +6,7 @@
 "use strict"
 
 /**
- * This function displays the discount depending on age and day of the week.
+ * This function displays the price of a milkshake depending on size, mixins, and snacks
  */
  // constants
 const HST = 0.13;
@@ -26,7 +26,7 @@ function displayCost() {
   let mixPrice2 = 0
   let mixPrice3 = 0
   let snkPrice = 0
-	// get age and day of the week
+	// get size, mixins, or snacks
   let select1 = document.getElementById('size');
 	let size = select1.options[select1.selectedIndex].value;
   
