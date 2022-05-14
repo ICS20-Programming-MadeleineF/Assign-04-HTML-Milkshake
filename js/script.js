@@ -167,13 +167,13 @@ function displayCost() {
 	}
   
   // snack price 
-   if (snacks == "Fries") {
+   if (document.getElementById("Fries").checked) {
 		snkPrice = SNK_PRICE
 	}
-	else if (snacks == "Chips") {
+	else if (document.getElementById("Chips").checked) {
 		snkPrice = SNK_PRICE
 	}
-  else if (snacks == "Popcorn") {
+  else if (document.getElementById("Popcorn").checked) {
 		snkPrice = SNK_PRICE
 	}
 	else  {

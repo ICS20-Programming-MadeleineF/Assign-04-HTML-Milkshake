@@ -1,0 +1,30 @@
+body{
+  background-color:Pink	;
+  text-align:center;
+}
+
+h1{
+  color:#9B5227;
+  background-color:RGB(238, 130, 238);
+  padding:15px;
+}
+
+h3{
+  color:#9B5227;
+  background-color:RGB(238, 130, 238);
+}
+
+h5{
+  color:#FFFFFF;
+  background-color:HSL(294, 65%, 60%);
+}
+
+div{
+  color:#9B5227;
+  background-color:#FC92D0;
+  padding:10px;
+}
+
+label{
+  color:#A0522D	;
+}
